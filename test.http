@@ -1,0 +1,17 @@
+### Browse Books
+GET http://localhost:4004/odata/v4/catalog/Books
+
+###
+#Browse Book by ID
+GET http://localhost:4004/odata/v4/catalog/Books(1) 
+
+### Insert a new Book
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{
+    "title":"Ponniyin selven",
+    "author":"Kalki",
+    "price":2000,
+    "stock":10
+}
